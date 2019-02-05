@@ -3,14 +3,14 @@ var input = document.getElementById("userinput");
 var ul = document.querySelector("ul");
 
 function inputLength () {
-    return input.nodeValue.length;
+    return input.value.length;
 }
 
 function createListElement() {
     var li = document.createElement("li");
-    li.appendChild(document.createTextNode(input.nodeValue));
+    li.appendChild(document.createTextNode(input.value));
     ul.appendChild(li);
-    input.nodeValue = "";
+    input.value = "";
 }
 
 function addListAfterClick () {
